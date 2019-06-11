@@ -27,6 +27,7 @@ pipeline {
       when {
         beforeAgent true
         branch 'master'
+        publishEvent simpleEvent('hello-api-eli')
       }
       steps {
         publishEvent simpleEvent('hello-api-eli')
